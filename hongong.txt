@@ -13,3 +13,5 @@ require
 - 가상환경 env 목록 : conda env list
 - 가상환경 삭제 : conda env remove -n name
 - 설치: conda install (모듈)
+
+* vscode: ctrl + shift + p 혹은 우측 상단 파이썬 인터프리터 설정 -> hongong 가상환경 setting
