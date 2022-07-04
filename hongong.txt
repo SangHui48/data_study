@@ -1,0 +1,15 @@
+require
+
+* (참고) 가상환경 구축 https://computer-science-student.tistory.com/219
+
+* 책에서 사용한 환경
+파이썬: 3.6.9   맷플롯립: 3.2.2     넘파이: 1.18.5      텐서플로: 2.3.0     사이킷런: 0.22.2
+
+* 나는 conda 사용
+- 가상환경 : conda create -n hongong python=3.8
+- 가상환경 실행 : conda activate hongong
+- 종료: conda deactivate
+
+- 가상환경 env 목록 : conda env list
+- 가상환경 삭제 : conda env remove -n name
+- 설치: conda install (모듈)
