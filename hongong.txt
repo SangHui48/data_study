@@ -15,3 +15,7 @@ require
 - 설치: conda install (모듈)
 
 * vscode: ctrl + shift + p 혹은 우측 상단 파이썬 인터프리터 설정 -> hongong 가상환경 setting
+
+---
+ * 설치된 패키지 목록 확인
+ conda list
