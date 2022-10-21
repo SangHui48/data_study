@@ -1,0 +1,46 @@
+$ conda config --show #아나콘다 전체 설정 확인 
+$ conda config --show | grep auto_activate_base #자동 활성화 옵션 상태
+$ conda config --set auto_activate_base False #자동 활성화 끄기
+$ conda config --set auto_activate_base True #자동 활성화 켜기
+
+
+가상환경 세팅
+
+$ conda activate #아나콘다 활성화
+$ conda search python #설치 가능한 파이썬 버전 확인
+$ conda create --name [가상환경 이름] python==[버전] #생성
+$ conda create --name [가상환경 이름] python=[버전] #생성
+$ conda info --envs #가상환경 조회
+$ conda activate [가상환경 이름] #가상환경 활성화
+$ source activate [가상환경 이름] #해당 가성환경 적용
+$ python --version #파이썬 버전 확인
+$ conda deactivate #해당 가상환경 끄기(base로)
+$ conda remove --name [가상환경 이름] --all #가상환경 + 설치 패키지 삭제
+
+해당 가상환경 필요 라이브러리 설치
+
+$ conda activate #아나콘다 활성화
+$ conda search python #설치 가능한 파이썬 버전 확인
+$ conda create --name [가상환경 이름] python==[버전] #생성
+$ conda info --envs #가상환경 조회
+$ conda activate [가상환경 이름] #가상환경 활성화
+$ source activate [가상환경 이름] #해당 가성환경 적용
+$ python --version #파이썬 버전 확인
+$ conda deactivate #해당 가상환경 끄기(base로)
+$ conda remove --name [가상환경 이름] --all #가상환경 + 설치 패키지 삭제
+
+되도록 conda 사용, 설치하려는 패키지 없을시 pip 이용
+
+주로 쓰는 가상환경 myenv1
+
+주피터 노트북에 가상환경 추가
+
+$ conda activate [가상환경 이름] //원하는 가상환경으로 진입
+$ conda install ipykernel
+$ python -m ipykernel install --user --name [가상환경 이름] --display-name "[주피터 가상환경 이름]"
+$ jupyter notebook //주피터 노트북 실행
+
+주피터 노트북에서 가상환경 삭제하려면
+
+$ jupyter kernelspec list #목록 확인
+$ jupyter kernelspec uninstall [가상환경 이름]
