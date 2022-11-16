@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 *.npy
+hands_on_machine_learning/datasets
