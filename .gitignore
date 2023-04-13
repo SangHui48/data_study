@@ -131,3 +131,4 @@ dmypy.json
 *.npy
 hands_on_machine_learning/datasets
 musthave_머신러닝_딥러닝_문제해결_전략/datasets
+p_month_1/data
